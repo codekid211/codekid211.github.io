@@ -1,0 +1,64 @@
+html {
+    background: black;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid white;
+    color: white;
+}
+
+p {
+    font-family: monospace;
+}
+
+#blackDivBox {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 1200px;
+    height: 600px;
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the element precisely */
+    /* opacity: 0.7; Adjust the opacity as needed */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row; /* Change to a column layout */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text within the div */
+}
+
+.overlay-image {
+    position: absolute;
+    top: 70;
+    left: 50%;
+    transform: translate(-50%, 0); /* Center the image both vertically and horizontally */
+    width: 81px;
+    height: 98px;
+    object-fit: cover; /* Adjust how the image is displayed */
+    z-index: 1; /* Ensure the image is on top of the text */
+}
+
+.innerDiv {
+    flex: 1; /* Each inner div takes up equal space */
+    background-color: rgba(0, 0, 0, 0); /* Set the background color as needed */
+    margin: 10px; /* Adjust the margin as needed */
+    border-radius: 5px; /* Add rounded corners to the inner divs */
+    text-align: center; /* Center horizontally */
+    display: flex;
+    justify-content: center; /* Center vertically */
+    align-items: center;
+    height: 100%; /* Ensure full height */
+    font-size: 35px; /* Increase the text size as needed */
+    color: white;
+    position: relative;
+}
